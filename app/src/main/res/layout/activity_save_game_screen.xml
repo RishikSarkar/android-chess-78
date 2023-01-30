@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/gameName"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/saveGame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:hint="Enter the name of the game" />
+
+    <TextView
+        android:id="@+id/saveGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="43dp"
+        android:text="Record this game!"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/gameName"
+        android:layout_below="@+id/gameName"
+        android:layout_marginTop="60dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/saveButton"
+        android:layout_alignEnd="@+id/gameName"
+        android:text="Cancel" />
+
+</RelativeLayout>
